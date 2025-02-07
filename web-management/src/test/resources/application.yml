@@ -1,0 +1,17 @@
+#h2資料庫設定
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+#Mybatis的相關設定
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+#google cloud storage設定
+google:
+  cloud:
+    storage:
+      bucketName: web-management
